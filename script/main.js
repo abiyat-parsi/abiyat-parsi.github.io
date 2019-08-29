@@ -262,6 +262,7 @@ $(document).ready(function () {
     })
 
     $("#view").on("click", ".avatar", function (e) {
+        $("#sw-poem").prop("checked", true);
         p = $(this).attr("data-pid");
         $('#poets option[value="' + p + '"]').attr("selected", true);
         p_id = p;
