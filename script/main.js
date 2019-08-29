@@ -1,5 +1,5 @@
 timeouts = [];
-API_BASE = "http://api.parsi.cf"
+API_BASE = "https://api.parsi.tk"
 var poets_list;
 
 function clear_timeouts() {
