@@ -1,0 +1,241 @@
+@font-face {
+    font-family: Nastaliq;
+    src: url("fonts/IranNastaliq.ttf");
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("fonts/Vazir.ttf");
+}
+
+body {
+    margin: 0;
+    background-color: #F1F1F1;
+}
+
+header > .logo {
+    clear: both;
+    margin: 70px 0;
+    text-align: center;
+    font-size: 55px;
+    line-height: 10px;
+    font-family: 'Nastaliq';
+    color: #707070;
+}
+
+a {
+    text-decoration: none;
+    font-family: Vazir;
+    color: #707070;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#view {
+    padding-right: 5px;
+    width: 1016px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+#view > .items > .avatar {
+    transition: .2s;
+    float: right;
+    display: block;
+    cursor: pointer;
+    transform: scale(0.95);
+    border-radius: 100%;
+}
+
+#view > .items > .avatar:hover {
+    transform: scale(1);
+}
+
+#view > .items > .tooltip {
+    position: absolute;
+    display: none;
+    z-index: 10;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-family: Vazir;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 13px;
+    right: 70px;
+    top: 90px;
+}
+
+
+#view > .items.poem-grid {
+    position: relative;
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px 0 #acacac;
+    width: 462px;
+    background-color: #e2e2e2;
+    height: 130px;
+    padding: 15px;
+}
+
+#view > .items.bio-grid {
+    position: relative;
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px 0 #acacac;
+    width: 960px;
+    min-height: 130px;
+    background-color: #e2e2e2;
+    padding: 20px;
+}
+
+#view > .items.poem-grid > .poem {
+    float: left;
+    padding: 15px 0;
+    height: 30px;
+    width: 378px;
+}
+
+#view > .items.bio-grid > .biography {
+    display: inline-block;
+    width: 833px;
+    padding: 0 30px 0 15px;
+    font-family: Vazir;
+    font-size: 16px;
+    color: #212529;
+}
+
+#view > .items.bio-grid > .poet {
+    position: absolute;
+    font-size: 15px;
+    text-align: center;
+    width: 125px;
+    right: 0;
+    top: 130px;
+}
+
+#view > .items.poem-grid > .poem > .b {
+    display: block;
+    font-family: Vazir;
+    text-align: center;
+    font-size: 19px;
+    line-height: 25px;
+    color: #212529;
+}
+
+#view > .items.poem-grid > .poem > .b1 {
+   margin-bottom: 18px;
+}
+
+#view > .items.poem-grid > .poem > .poet {
+    float: left;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+#view > .loader {
+    text-align: center;
+    display: none;
+    margin: 120px auto;
+}
+
+#view > .loader.loading {
+    display: block;
+}
+
+#view > .loader > svg {
+    animation: 1s linear spinBasic infinite;
+}
+
+@keyframes spinBasic {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.controls {
+    position: relative;
+    width: 1016px;
+    margin: 20px auto 30px auto;
+}
+
+#capacity {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: 55px;
+    font-family: Vazir;
+}
+
+.switch > input {
+    display: none;
+}
+
+.switch {
+    position: absolute;
+    top: 0;
+    left: 444px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+}
+
+.switches {
+    transition: .2s;
+    padding: 4px;
+    display: block;
+    width: 60px;
+    font-size: 15px;
+    font-family: Vazir;
+    text-align: center;
+    float: right;
+    color: #707070;
+    cursor: pointer;
+}
+
+.switch > input:checked + label {
+    color: #F1F1F1;
+    background-color: #707070;
+}
+
+#pager {
+    direction: ltr;
+    list-style: none;
+    padding-left: 14px;
+    margin: 10px auto 100px auto;
+    text-align: center;
+    width: 400px;
+    font-family: Vazir;
+}
+
+#pager > li {
+    display: inline-block;
+    padding: 2px 0 0px 0;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    color: #707070;
+    line-height: 28px;
+    margin-left: 3px;
+    cursor: pointer;
+    width: 35px;
+}
+
+footer {
+    height: 70px;
+    text-align: center;
+}
+
+footer > .caption {
+    color: #212529;
+    font-family: Vazir;
+}
