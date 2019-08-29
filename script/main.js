@@ -1,5 +1,5 @@
 timeouts = [];
-API_BASE = "https://parsi-api-beatbot.fandogh.cloud/"
+API_BASE = "https://parsi-api-beatbot.fandogh.cloud"
 var poets_list;
 
 function clear_timeouts() {
